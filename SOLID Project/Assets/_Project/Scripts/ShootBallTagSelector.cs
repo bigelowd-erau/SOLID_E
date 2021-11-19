@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class RayCastBasedTagSelector : MonoBehaviour, ISelector
+public class ShootBallTagSelector : MonoBehaviour, ISelector
 {
     [SerializeField] private string selectableTag = "Selectable";
     private Transform _selection;
@@ -12,7 +12,7 @@ public class RayCastBasedTagSelector : MonoBehaviour, ISelector
             var selection = hit.transform;
             if (selection.CompareTag(this.selectableTag))
             {
-                this._selection = selection.transform;
+                this._selection = selection;
             }
         }
     }
