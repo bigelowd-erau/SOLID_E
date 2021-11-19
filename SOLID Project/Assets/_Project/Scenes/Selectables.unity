@@ -1064,7 +1064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &166135197
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7288,9 +7288,8 @@ GameObject:
   - component: {fileID: 1550730621}
   - component: {fileID: 1550730620}
   - component: {fileID: 1550730622}
-  - component: {fileID: 1550730623}
   - component: {fileID: 1550730625}
-  - component: {fileID: 1550730624}
+  - component: {fileID: 1550730623}
   m_Layer: 0
   m_Name: Selection Manager
   m_TagString: Untagged
@@ -7345,21 +7344,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1550730619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bf57bb21734d9c4c83160f78ef4c9b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  highlightMaterial: {fileID: 2100000, guid: 76191a502167024488da6dc320d2e35a, type: 2}
-  defaultMaterial: {fileID: 2100000, guid: 5a21f72b8943e09419e0e25fa746b43e, type: 2}
---- !u!114 &1550730624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550730619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78d852b617e712343b6fb8b2b0b2c209, type: 3}
+  m_Script: {fileID: 11500000, guid: ac43a244ec5eed1449deadf062738ead, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1550730625
