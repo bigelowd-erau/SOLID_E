@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 public class MouseScreenRayProvider : MonoBehaviour, IRayProvider
 {
-    public Ray CreateRay()
+    public Stack<Ray> CreateRay()
     {
-        return Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        Stack<Ray> ray = new Stack<Ray>();
+       // Debug.Log("reg ray made");
+        ray.Push(Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)));
+        return ray;
     }
 }

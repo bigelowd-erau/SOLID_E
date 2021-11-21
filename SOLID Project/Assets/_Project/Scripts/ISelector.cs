@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 public interface ISelector
 {
-    void Check(Ray ray);
+    void Check(Stack<Ray> ray);
     Transform GetSelection();
 }

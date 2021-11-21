@@ -6,8 +6,9 @@ public class ResponsiveSelector : MonoBehaviour, ISelector
     [SerializeField] private List<Selectable> selectables;
     private const float threshold = 0.99f;
     private Transform _selection;
-    public void Check(Ray ray)
+    public void Check(Stack<Ray> rays)
     {
+        Ray ray = rays.Pop();
         _selection = null;
         float closest = 0;
         for (int i = 0; i < selectables.Count; ++i)

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 public interface IRayProvider
 {
-    Ray CreateRay();
+    Stack<Ray> CreateRay();
 }
