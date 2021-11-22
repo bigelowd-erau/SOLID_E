@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Selectable
   - BallRay
+  - SelectionResponseLabel
+  - RayProviderLabel
+  - SelectorLabel
   layers:
   - Default
   - TransparentFX
